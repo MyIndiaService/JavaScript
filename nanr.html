@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NO Argument NO Return </title>
+</head>
+<body>
+    <label for="n1">Enter first nubmer</label>
+    <input type="number" id="n1" /><br>
+    <label for="n2">Enter second number</label>
+    <input type="number" id="n2">
+    <input type="button" value="Add" onclick="add()">
+</body>
+<script>
+    res=0;  // global variable 
+    function add()
+    {
+        n1=12; // local variable 
+        n2=10;
+        res=n1+n2;
+      //  alert(res);
+      document.write(res);
+    }
+    document.write(res);
+    add();
+    //alert(res);
+</script>
+</html>
