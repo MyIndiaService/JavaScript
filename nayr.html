@@ -7,13 +7,19 @@
     <title>No Arugment Yes Return </title>
 </head>
 <body>
-    
+    <label for="tn1">Enter First number</label>
+    <input type="number" id="tn1"><br>
+    <label for="tn2">Enter the Second Number</label>
+    <input type="number" id="tn2">
+    <input type="button" value="Sum" onclick="alert(add())"> 
+    <p id="res"></p>
 </body>
 <script>
     function add(){
-      var n1=5;
-      let n2=10;
-      const res=n1+n2;
+      var n1=document.getElementById("tn1").value;
+      let n2=document.getElementById("tn2").value;
+      
+      const res=Number(n1)+Number(n2);
         return res;
     }
 

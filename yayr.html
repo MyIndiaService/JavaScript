@@ -9,12 +9,17 @@
 </head>
 <body>
     <h1 onclick="alert(add(2,5))">Additoin of two number result::  </h1>
+    <label for="tn1">Enter First number</label>
+    <input type="number" id="tn1"><br>
+    <label for="tn2">Enter the Second Number</label>
+    <input type="number" id="tn2">
+    <input type="Button" value="Add" onclick="alert(add(tn1.value,tn2.value))">
     <h1 id="res">  </h1>
-    <input id="re">
+
     <script>
         function add(n1,n2)
         {
-            return n1+n2;
+            return Number(n1)+parseInt(n2);
         }
       /*  res=add(5,10);
         //document.write(res);
